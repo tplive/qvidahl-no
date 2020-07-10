@@ -34,7 +34,7 @@ export default class IndexPage extends React.Component<IndexPageProps> {
                 <p>Qvidahl Invent is my consulting company, where I deliver IT services such as workshops on specific topics, classes on specific technologies, custom software solutions and much more...</p>
                 <p>Now let's create something great together!</p>
                 <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-                    <Image />
+
                 </div>
                 <Link to="/page-2/">Go to page 2</Link> <br />
                 <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
