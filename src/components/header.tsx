@@ -1,44 +1,45 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import { Link, PageProps } from 'gatsby';
 
-interface HeaderPageProps extends PageProps {
-    data: {
-        site: {
-            siteMetadata: {
-                title: string,
-            }
-        }
-    }
-}
-const Header = ({ title }) => {
+
+const Header = ({ siteTitle }) => {
     return (
         <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+            style={{
+                background: `#206`,
+                marginBottom: `1.45rem`,
+            }}
         >
-          {title}
-        </Link>
-      </h1>
-    </div>
-  </header>
+            <div
+                style={{
+                    margin: `0 auto`,
+                    maxWidth: 960,
+                    padding: `1.45rem 1.0875rem`,
+                }}
+            >
+                <h1 style={{ margin: 0 }}>
+                    <Link
+                        to="/"
+                        style={{
+                            color: `white`,
+                            textDecoration: `none`,
+                        }}
+                    >
+                        {siteTitle}
+                    </Link>
+                </h1>
+            </div>
+        </header>
     );
 }
+
+Header.propTypes = {
+    siteTitle: PropTypes.string,
+  }
+  
+  Header.defaultProps = {
+    siteTitle: ``,
+  }
 
 export default Header
