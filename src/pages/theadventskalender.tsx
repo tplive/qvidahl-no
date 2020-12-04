@@ -37,11 +37,11 @@ console.log(day);
 
 var urls = [];
 
-if(date.getMonth() == 11) {
+if (date.getMonth() == 11) {
     for (var i = 0; i < date.getDate(); i++) {
         urls.push(episodes[i]);
     }
-    
+
 }
 
 
@@ -50,7 +50,7 @@ export default class IndexPage extends React.Component<IndexPageProps> {
     public render() {
 
         return (
-            <html style= {{
+            <html style={{
                 backgroundColor: `#D6001C`,
             }}>
                 <body
@@ -60,7 +60,7 @@ export default class IndexPage extends React.Component<IndexPageProps> {
                         minHeight: `100vh`,
                         overflow: `hidden`,
                         padding: `50px`,
-                        
+
                     }}
                 >
 
@@ -70,7 +70,7 @@ export default class IndexPage extends React.Component<IndexPageProps> {
                     }}>
                         <h1 style={{
                             color: `#FFF`,
-                            textAlign: `start` 
+                            textAlign: `start`
                         }}
                         >The Adventskalender 2020</h1>
                         <div style={{
@@ -102,10 +102,26 @@ export default class IndexPage extends React.Component<IndexPageProps> {
                             <Card number="24" url={urls[23]} />
 
                         </div>
-                        <p><a style={{
-                            color: `#FFF`,
-                                textDecoration: `none`
-                            }} href="https://www.youtube.com/playlist?list=PLSu-kJ8PGdcJg0K-rhNlab5V4dQCS21QY">click here to binge all episodes</a></p>
+                        <div>
+                            <p>
+                                <a style={{
+                                    color: `#FFF`,
+                                    textDecoration: `none`
+                                }} href="https://www.youtube.com/playlist?list=PLSu-kJ8PGdcJg0K-rhNlab5V4dQCS21QY">click here to binge all episodes</a>
+                            </p>
+                            <p>
+                                <a style={{
+                                    color: `#FFF`,
+                                    textDecoration: `none`
+                                }} href="https://www.youtube.com/watch?v=Dw63RZi5iPo">25 år med "The Julekalender - Del 1"</a>
+                            </p>
+                            <p>
+                                <a style={{
+                                    color: `#FFF`,
+                                    textDecoration: `none`
+                                }} href="https://www.youtube.com/watch?v=lnv8t9JsqyQ">25 år med "The Julekalender - Del 2"</a>
+                            </p>
+                        </div>
                     </div>
                 </body>
             </html>
