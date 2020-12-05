@@ -1,20 +1,17 @@
 .card {
-    background: #D6001C;
-                float: left;
-                align-content: center;
-                border: 1.0px solid  #FFF;
+    
 }
 
 .hatch {
-    margin: 10px;
+    margin: 1rem;
 }
 
 .active-card {
     background-color: #D6001C;
-    border: 1.0px solid  #FFF;
+    border: 1.0px dashed #FFF;
 }
 
 .inactive-card {
     background-color: #960014;
-    border: 1.0px solid  #DDD;
+    border: 1.0px dashed #DDD;
 }

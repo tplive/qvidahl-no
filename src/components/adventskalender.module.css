@@ -1,0 +1,52 @@
+:root {
+    --dark-red: #960014;
+    --light-red: #D6001C;
+    --card-size: 140px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.mainHeader {
+  color: white;
+  grid-column: 1 / -1;
+  height: 1rem;
+  text-align: center;
+}
+
+.content {
+  min-height: 1500px;
+  background-color: var(--dark-red);
+  padding: 200px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, var(--card-size));
+  grid-auto-rows: 1fr 130px 130px 130px 130px 130px ;
+  gap: 20px;
+  position: relative;
+  z-index: 5;
+}
+
+.linkspace {
+  grid-column: 1 / -1;
+  text-align: center;
+  
+}
+
+.listStyle {
+  color: white;
+}
+
+.listStyle > li {
+}
+
+canvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  pointer-events: none;
+}
