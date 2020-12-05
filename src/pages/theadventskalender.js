@@ -6,6 +6,7 @@ import julestyle from "../styles/julestyle.module.css"
 if (typeof window !== `undefined`) {
     const Snow = require("../assets/snowdrift")
   }
+// Just a comment
 
 // Episodes 1-24 on Youtube
 var episodes = ["https://youtu.be/bFHy61erVyQ", "https://youtu.be/OaUoWeBbYAo",
