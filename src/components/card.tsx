@@ -7,11 +7,18 @@ import julestyle from './card.module.css';
 const Card = ({ number, url, active }) => {
     return (
 
-        <div key={number} className={ active === "true" ? julestyle.activeCard : julestyle.inactiveCard }>
+        active === "true" ? (
             <a href={url}>
+                <div key={number} className={ julestyle.activeCard }>
                     <h1 className={julestyle.hatch}>{number}</h1>
+                </div>
             </a>
-        </div>
+        ) : (
+                <div key={number} className={julestyle.inactiveCard}>
+                    <h1 className={julestyle.hatch}>{number}</h1>
+                </div>
+            )
+
 
     );
 }

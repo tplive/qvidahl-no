@@ -13,6 +13,7 @@ a {
   grid-column: 1 / -1;
   height: 1rem;
   text-align: center;
+  font-family: lobster;
 }
 
 .content {
@@ -20,10 +21,10 @@ a {
   background-color: var(--dark-red);
   padding: 200px;
 }
-.container {
+.gridContainer {
   display: grid;
   grid-template-columns: repeat(6, var(--card-size));
-  grid-auto-rows: 1fr 130px 130px 130px 130px 130px ;
+  grid-auto-rows: 130px;
   gap: 20px;
   position: relative;
   z-index: 5;

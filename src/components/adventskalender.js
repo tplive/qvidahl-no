@@ -40,25 +40,25 @@ if (date.getMonth() === 11) {
 
 export default function AdventsKalender() {
     return (
-            <div className={julestyle.content}>
-                <div className={julestyle.container}>
+        <div className={julestyle.content}>
+            <div className={julestyle.gridContainer}>
                 <h1 className={julestyle.mainHeader}>The Adventskalender 2020</h1>
-                    {cards}
-                    <div className={julestyle.linkspace}>
-                        <ul className={julestyle.listStyle}>
-                            <li>
-                                <a href="https://www.youtube.com/playlist?list=PLSu-kJ8PGdcJg0K-rhNlab5V4dQCS21QY">click here to binge all episodes</a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/watch?v=Dw63RZi5iPo">25 år med "The Julekalender - Del 1"</a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/watch?v=lnv8t9JsqyQ">25 år med "The Julekalender - Del 2"</a>
-                            </li>
-                        </ul>
-                    </div>
+                {cards}
+                <div className={julestyle.linkspace}>
+                    <ul className={julestyle.listStyle}>
+                        <li>
+                            <a href="https://www.youtube.com/playlist?list=PLSu-kJ8PGdcJg0K-rhNlab5V4dQCS21QY">click here to binge all episodes</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=Dw63RZi5iPo">25 år med "The Julekalender - Del 1"</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=lnv8t9JsqyQ">25 år med "The Julekalender - Del 2"</a>
+                        </li>
+                    </ul>
                 </div>
-
             </div>
+
+        </div>
     );
 }
