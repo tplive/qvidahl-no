@@ -1,0 +1,20 @@
+.card {
+    background: #D6001C;
+                float: left;
+                align-content: center;
+                border: 1.0px solid  #FFF;
+}
+
+.hatch {
+    margin: 10px;
+}
+
+.active-card {
+    background-color: #D6001C;
+    border: 1.0px solid  #FFF;
+}
+
+.inactive-card {
+    background-color: #960014;
+    border: 1.0px solid  #DDD;
+}

@@ -1,43 +1,15 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { Link, PageProps } from 'gatsby';
+import julestyle from './card.module.css';
 
 
-const Card = ({ number, url }) => {
+
+const Card = ({ number, url, active }) => {
     return (
 
-        <div
-            style={{
-                background: `#D6001C`,
-                float: `left`,
-                alignContent: `center`,
-                marginBottom: `1.45rem`,
-                marginRight: `1.45rem`,
-                width: `150px`,
-                height: `150px`,
-                border: "1.0px solid #FFF",
-            }}
-        ><a style={{
-            textDecoration: `none`,
-        }}
-            href={url}>
-                <div
-                    style={{
-                        margin: `0 auto`,
-                    
-                        padding: `1.45rem 1.0875rem`,
-                    }}
-                >
-                    <h1 style={{
-                        margin: 0,
-                        color: `white`,
-                        textDecoration: `none`,
-                    }}>
-
-                        {number}
-
-                    </h1>
-                </div>
+        <div key={number} className={ active === "true" ? julestyle.activeCard : julestyle.inactiveCard }>
+            <a href={url}>
+                    <h1 className={julestyle.hatch}>{number}</h1>
             </a>
         </div>
 
