@@ -1,8 +1,11 @@
 import React from "react"
 import Card from "../components/card"
 import julestyle from "../styles/julestyle.module.css"
-import Snow from "../assets/snowdrift"
+//import Snow from "../assets/snowdrift"
 
+if (typeof window !== `undefined`) {
+    const Snow = require("../assets/snowdrift")
+  }
 
 // Episodes 1-24 on Youtube
 var episodes = ["https://youtu.be/bFHy61erVyQ", "https://youtu.be/OaUoWeBbYAo",
