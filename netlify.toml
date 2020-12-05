@@ -1,0 +1,31 @@
+
+[build]
+    base="/"
+# Production context:
+# All deploys from the main repository branch
+# will inherit these settings.
+[context.production]
+  command = "gatsby build"
+  [context.production.environment]
+    ACCESS_TOKEN = "super secret"
+
+# Deploy Preview context:
+# All deploys generated from a pull/merge request
+# will inherit these settings.
+[context.deploy-preview.environment]
+  ACCESS_TOKEN = "not so secret"
+
+# Branch deploy context:
+# All deploys that are not from a pull/merge request
+# or from the production branch will inherit these settings.
+[context.branch-deploy]
+  command = "gatsby build"
+
+# Specific branch context:
+# Deploys from this branch will take these settings
+# and override their current ones.
+[context.feature]
+  command = "gatsby build"
+
+[context."features/branch"]
+  command = "gatsby build"
