@@ -620,3 +620,31 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+/**
+ * {1} Using dvh instead of vh in order to mitigate a
+ *     "bug" in iOS where `100vh` is a tiny bit more
+ *     than the viewport height. The `min-height`
+ *     definition is duplicated because not all browsers
+ *     support `dvh` as of 2021-11-24.
+ *     https://css-tricks.com/the-large-small-and-dynamic-viewports
+ */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* {1} */
+  min-height: 100dvh;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 1.0875rem 1.45rem;
+}
+
+.main {
+  flex-grow: 1;
+}
