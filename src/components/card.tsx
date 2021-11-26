@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import julestyle from './card.module.css';
 
 const Card = ({ number, url, active }: { number: number, url: string, active: any }) => {
