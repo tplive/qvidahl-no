@@ -6,9 +6,12 @@
     "noImplicitAny": true,
     "module": "ES6",
     "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "target": "ES2020",
+    "allowJs": true,
     "jsx": "react"
   },
   "include": ["./src/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "importlater"]
 }
