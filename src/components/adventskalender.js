@@ -5,18 +5,18 @@ import julestyle from "./adventskalender.module.css"
 console.log(julestyle);
 
 var skomakergata = [
-"https://youtu.be/XvB-cf2g2Zw", "https://youtu.be/5k21zKOJNCU", 
-"https://youtu.be/K1dkuYYe7xk", "https://youtu.be/xinpW9k26qo", 
-"https://youtu.be/vEW6JaV9ky0", "https://youtu.be/jyNvAanHt1M", 
-"https://youtu.be/FABLteuq7Y4", "https://youtu.be/b1-pToNRh60", 
-"https://youtu.be/Z8tcr6kFAZQ", "https://youtu.be/iNP7Yiuba0k", 
-"https://youtu.be/Oyph01G_yGs", "https://youtu.be/IFZNCsVDGo4", 
-"https://youtu.be/elwVaH_IBbc", "https://youtu.be/LO5Y4wiCu-Y", 
-"https://youtu.be/7EKIhCk5u_0", "https://youtu.be/6NnKk5p_HOg", 
-"https://youtu.be/16ULOYIRxyw", "https://youtu.be/m8GTaKlat-I", 
-"https://youtu.be/5nE0Zn2Et94", "https://youtu.be/1opSFU3C27I", 
-"https://youtu.be/mWZ80uuAmgs", "https://youtu.be/Y-l_0POyEBg", 
-"https://youtu.be/HgraVecKNRk", "https://youtu.be/-wK27zOA5gA", 
+    "https://youtu.be/XvB-cf2g2Zw", "https://youtu.be/5k21zKOJNCU",
+    "https://youtu.be/K1dkuYYe7xk", "https://youtu.be/xinpW9k26qo",
+    "https://youtu.be/vEW6JaV9ky0", "https://youtu.be/jyNvAanHt1M",
+    "https://youtu.be/FABLteuq7Y4", "https://youtu.be/b1-pToNRh60",
+    "https://youtu.be/Z8tcr6kFAZQ", "https://youtu.be/iNP7Yiuba0k",
+    "https://youtu.be/Oyph01G_yGs", "https://youtu.be/IFZNCsVDGo4",
+    "https://youtu.be/elwVaH_IBbc", "https://youtu.be/LO5Y4wiCu-Y",
+    "https://youtu.be/7EKIhCk5u_0", "https://youtu.be/6NnKk5p_HOg",
+    "https://youtu.be/16ULOYIRxyw", "https://youtu.be/m8GTaKlat-I",
+    "https://youtu.be/5nE0Zn2Et94", "https://youtu.be/1opSFU3C27I",
+    "https://youtu.be/mWZ80uuAmgs", "https://youtu.be/Y-l_0POyEBg",
+    "https://youtu.be/HgraVecKNRk", "https://youtu.be/-wK27zOA5gA",
 ];
 
 // Episodes 1-24 of The Julekalender on Youtube
@@ -51,7 +51,7 @@ if (date.getMonth() === 11) {
         }
     }
 } else {
-
+    <h1>Come back in December</h1>
 }
 
 export default function AdventsKalender() {
@@ -73,13 +73,13 @@ export default function AdventsKalender() {
                         </li>
                     </ul>
                 </div>
-                </div>
-                <iframe title="soundcloud" height="130" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/367845692&color=%23960014&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                    <div className={julestyle.soundcloud}>
-                        <a href="https://soundcloud.com/akirathedon" title="AKIRA THE DON" target="_blank" rel="noreferrer">AKIRA THE DON</a> · 
-                        <a href="https://soundcloud.com/akirathedon/lofi-christmas" title="ＬＯＦＩ  ＣＨＲＩＳＴＭＡＳ   ❄️❄️❄️" target="_blank" rel="noreferrer">ＬＯＦＩ  ＣＨＲＩＳＴＭＡＳ   <span role="img" aria-label="snowflakes">❄️❄️❄️</span></a>
-                    </div>
             </div>
+            <iframe title="soundcloud" height="130" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/367845692&color=%23960014&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <div className={julestyle.soundcloud}>
+                <a href="https://soundcloud.com/akirathedon" title="AKIRA THE DON" target="_blank" rel="noreferrer">AKIRA THE DON</a> ·
+                <a href="https://soundcloud.com/akirathedon/lofi-christmas" title="ＬＯＦＩ  ＣＨＲＩＳＴＭＡＳ   ❄️❄️❄️" target="_blank" rel="noreferrer">ＬＯＦＩ  ＣＨＲＩＳＴＭＡＳ   <span role="img" aria-label="snowflakes">❄️❄️❄️</span></a>
+            </div>
+        </div>
 
     );
 }
