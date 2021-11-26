@@ -20,9 +20,6 @@ const Card = ({ number, url, active }: { number: number, url: string, active: an
     );
 }
 
-Card.propTypes = {
-    siteTitle: PropTypes.string,
-}
 
 Card.defaultProps = {
     siteTitle: ``,
