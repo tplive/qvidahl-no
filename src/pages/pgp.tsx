@@ -1,11 +1,9 @@
 import * as React from 'react';
-import { Link, PageProps, graphql } from "gatsby";
-
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 
-interface AboutPageProps extends PageProps {
+interface AboutPageProps {
     data: {
         site: {
             siteMetadata: {
@@ -15,15 +13,6 @@ interface AboutPageProps extends PageProps {
     }
 }
 
-export const pageQuery = graphql`
-    query AboutQuery {
-        site {
-            siteMetadata {
-                title
-            }
-        }
-    }
-`
 
 export default class AboutPage extends React.Component<AboutPageProps> {
 
@@ -52,7 +41,7 @@ fgEAjbWeF80Ut6ifNyXT0AzJ0md66zAaObSpt/tgmhmdagg=
 </code>
                 
                 
-                <p><Link to="/">Go Home</Link></p>
+                <p><a href="/">Go Home</a></p>
             </Layout>
         );
     }

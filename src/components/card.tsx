@@ -1,31 +1,24 @@
-import * as React from 'react';
-import julestyle from './card.module.css';
+import * as React from 'react'
+import julestyle from './card.module.css'
 
-const Card = ({ number, url, active }: { number: number, url: string, active: any }) => {
-    return (
-
-        active === "true" ? (
-            <a href={url}>
-                <div key={number} className={julestyle.activeCard}>
-                    <h1 className={julestyle.hatch}>{number}</h1>
-                </div>
-            </a>
-        ) : (
-            <div key={number} className={julestyle.inactiveCard}>
-                <h1 className={julestyle.hatch}>{number}</h1>
-            </div>
-        )
-
-
-    );
+type CardProps = {
+  number: number
+  url: string
+  active: 'true' | 'false'
 }
 
-Card.propTypes = {
-    siteTitle: PropTypes.string,
-}
-
-Card.defaultProps = {
-    siteTitle: ``,
+const Card: React.FC<CardProps> = ({ number, url, active }) => {
+  return active === 'true' ? (
+    <a href={url}>
+      <div key={number} className={julestyle.activeCard}>
+        <h1 className={julestyle.hatch}>{number}</h1>
+      </div>
+    </a>
+  ) : (
+    <div key={number} className={julestyle.inactiveCard}>
+      <h1 className={julestyle.hatch}>{number}</h1>
+    </div>
+  )
 }
 
 export default Card

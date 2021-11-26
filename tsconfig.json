@@ -6,9 +6,11 @@
     "noImplicitAny": true,
     "module": "ES6",
     "moduleResolution": "Node",
-    "target": "ES2020",
-    "jsx": "react"
+    "target": "ESNext",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true
   },
-  "include": ["./src/**/*"],
+  "include": ["./src/**/*", "typings.d.ts"],
   "exclude": ["node_modules"]
 }

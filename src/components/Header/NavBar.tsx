@@ -1,7 +1,7 @@
-import React from 'react';
+import * as React from 'react';
 import { Link } from 'react-router-dom';
 
-class NavBar {
+class NavBar extends React.Component {
   render() {
     return (
       <header>

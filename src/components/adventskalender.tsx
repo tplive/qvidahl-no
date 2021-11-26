@@ -1,5 +1,5 @@
-import React from "react"
-import Card from "../components/card"
+import * as React from "react"
+import Card from "./card"
 import julestyle from "./adventskalender.module.css"
 
 console.log(julestyle);
@@ -36,7 +36,7 @@ var episodes = ["https://youtu.be/bFHy61erVyQ", "https://youtu.be/OaUoWeBbYAo",
 
 let date = new Date();
 let today = date.getDate();
-var cards = [];
+var cards: Array<JSX.Element> = [];
 
 if (date.getMonth() === 11) {
     for (var i = 0; i < episodes.length; i++) {
@@ -74,7 +74,7 @@ export default function AdventsKalender() {
                     </ul>
                 </div>
             </div>
-            <iframe title="soundcloud" height="130" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/367845692&color=%23960014&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe title="soundcloud" height="130" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/367845692&color=%23960014&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             <div className={julestyle.soundcloud}>
                 <a href="https://soundcloud.com/akirathedon" title="AKIRA THE DON" target="_blank" rel="noreferrer">AKIRA THE DON</a> ·
                 <a href="https://soundcloud.com/akirathedon/lofi-christmas" title="ＬＯＦＩ  ＣＨＲＩＳＴＭＡＳ   ❄️❄️❄️" target="_blank" rel="noreferrer">ＬＯＦＩ  ＣＨＲＩＳＴＭＡＳ   <span role="img" aria-label="snowflakes">❄️❄️❄️</span></a>
