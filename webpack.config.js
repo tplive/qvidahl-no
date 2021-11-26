@@ -15,7 +15,7 @@ const config = {
             {
                 test: /\.(js|jsx)$/,
                 use: 'babel-loader',
-                exclude: /node_modules/
+                exclude: /(node_modules)/,
             },
             {
                 test: /\.css$/,
@@ -37,15 +37,21 @@ const config = {
             },
             {
                 test: /\.ts(x)?$/,
-                loader: 'ts-loader',
-                exclude: /node_modules/
+                exclude: /(node_modules)/,
+                use: [
+                    {
+                        loader: 'babel-loader'
+                    },
+                    {
+                        loader: 'ts-loader'
+                    }
+                ]
             }
         ]
     },
     devServer: {
-        'static': {
-            directory: './dist'
-        }
+        historyApiFallback: true,
+        port: 8090,
     },
     resolve: {
         extensions: [
