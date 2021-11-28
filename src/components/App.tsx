@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import NavBar from './HeaderComponent/NavBar';
+import * as React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import NavBar from './Header/NavBar';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <Router>
