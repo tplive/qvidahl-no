@@ -5,7 +5,7 @@
 # All deploys from the main repository branch
 # will inherit these settings.
 [context.production]
-  command = "gatsby build"
+  command = "npm run build-prod"
   [context.production.environment]
     ACCESS_TOKEN = "super secret"
 
@@ -19,7 +19,7 @@
 # All deploys that are not from a pull/merge request
 # or from the production branch will inherit these settings.
 [context.branch-deploy]
-  command = ""
+  command = "npm run build-prod"
 
 # Specific branch context:
 # Deploys from this branch will take these settings
