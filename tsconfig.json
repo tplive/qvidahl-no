@@ -8,10 +8,10 @@
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "target": "ES2020",
+    "target": "ESNext",
     "allowJs": true,
     "jsx": "react"
   },
-  "include": ["./src/**/*"],
+  "include": ["./src/**/*", "typings.d.ts"],
   "exclude": ["node_modules", "importlater"]
 }
