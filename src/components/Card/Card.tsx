@@ -19,6 +19,7 @@ const Card: React.FC<CardProps> = ({ number, url, active }) => {
             <h1 className={julestyle.hatch}>{number}</h1>
         </div>
     )
+
 }
 
 export default Card
