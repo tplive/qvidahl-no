@@ -1,6 +1,8 @@
 import * as React from 'react'
 import Card from '../Card/Card'
-import julestyle from 'Adventskalender.module.css'
+import julestyle from './Adventskalender.module.css'
+import 'tailwindcss/tailwind.css'
+
 
 console.log(julestyle);
 
@@ -56,30 +58,30 @@ if (date.getMonth() === 11) {
 
 export default function Adventskalender() {
     return (
-        <div className={julestyle.content}>
-            <div className={julestyle.gridContainer}>
-                <h1 className={julestyle.mainHeader}>The Adventskalender 2020</h1>
-                {cards}
-                <div className={julestyle.linkspace}>
-                    <ul className={julestyle.listStyle}>
-                        <li>
-                            <a href="https://www.youtube.com/playlist?list=PLSu-kJ8PGdcJg0K-rhNlab5V4dQCS21QY">click here to binge all episodes</a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/watch?v=Dw63RZi5iPo">25 år med &quot;The Julekalender - Del 1&quot;</a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/watch?v=lnv8t9JsqyQ">25 år med &quot;The Julekalender - Del 2&quot;</a>
-                        </li>
-                    </ul>
+        <>
+            <div className="bg-red-600 container">
+                <div className="grid grid-cols-6">
+                    {cards}
+                    <div className={julestyle.linkspace}>
+                        <ul className={julestyle.listStyle}>
+                            <li>
+                                <a href="https://www.youtube.com/playlist?list=PLSu-kJ8PGdcJg0K-rhNlab5V4dQCS21QY">click here to binge all episodes</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=Dw63RZi5iPo">25 år med &quot;The Julekalender - Del 1&quot;</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=lnv8t9JsqyQ">25 år med &quot;The Julekalender - Del 2&quot;</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <iframe title="soundcloud" height="130" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/367845692&color=%23960014&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                <div className={julestyle.soundcloud}>
+                    <a href="https://soundcloud.com/akirathedon" title="AKIRA THE DON" target="_blank" rel="noreferrer">AKIRA THE DON</a> ·
+                    <a href="https://soundcloud.com/akirathedon/lofi-christmas" title="ＬＯＦＩ  ＣＨＲＩＳＴＭＡＳ   ❄️❄️❄️" target="_blank" rel="noreferrer">ＬＯＦＩ  ＣＨＲＩＳＴＭＡＳ   <span role="img" aria-label="snowflakes">❄️❄️❄️</span></a>
                 </div>
             </div>
-            <iframe title="soundcloud" height="130" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/367845692&color=%23960014&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-            <div className={julestyle.soundcloud}>
-                <a href="https://soundcloud.com/akirathedon" title="AKIRA THE DON" target="_blank" rel="noreferrer">AKIRA THE DON</a> ·
-                <a href="https://soundcloud.com/akirathedon/lofi-christmas" title="ＬＯＦＩ  ＣＨＲＩＳＴＭＡＳ   ❄️❄️❄️" target="_blank" rel="noreferrer">ＬＯＦＩ  ＣＨＲＩＳＴＭＡＳ   <span role="img" aria-label="snowflakes">❄️❄️❄️</span></a>
-            </div>
-        </div>
-
+        </>
     );
 }
