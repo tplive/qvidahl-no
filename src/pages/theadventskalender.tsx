@@ -1,6 +1,6 @@
 import * as React from 'react'
-import Adventskalender from '../components/Adventskalender/Adventskalender'
-import Footer from '../components/Footer/Footer'
+// later import Adventskalender from '../components/Adventskalender/Adventskalender'
+
 
 import julestyle from './theadventskalender.module.css'
 
@@ -13,9 +13,9 @@ export default function TheAdventsKalender() {
     return (
         <div>
             <div className={julestyle.content}>
-                <Adventskalender />
+                
             </div>
-            <Footer />
+            
         </div>
     );
 }

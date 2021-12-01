@@ -66,10 +66,10 @@ export default function Adventskalender() {
                             <a href="https://www.youtube.com/playlist?list=PLSu-kJ8PGdcJg0K-rhNlab5V4dQCS21QY">click here to binge all episodes</a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/watch?v=Dw63RZi5iPo">25 år med "The Julekalender - Del 1"</a>
+                            <a href="https://www.youtube.com/watch?v=Dw63RZi5iPo">25 år med &quot;The Julekalender - Del 1&quot;</a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/watch?v=lnv8t9JsqyQ">25 år med "The Julekalender - Del 2"</a>
+                            <a href="https://www.youtube.com/watch?v=lnv8t9JsqyQ">25 år med &quot;The Julekalender - Del 2&quot;</a>
                         </li>
                     </ul>
                 </div>
