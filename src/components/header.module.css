@@ -4,7 +4,7 @@
     justify-content: center;
     height: 16rem;
     background-size: cover;
-    background-image: url("../images/marmorslottet_panorama.jpg");
+    background-image: url("../images/marmorslottet_panorama_header.png");
 }
 
 .headerTitleBlock {
@@ -24,8 +24,8 @@
 }
 
 .subTitle {
-    justify-items: right;
-    grid-column: 2;
+    float:right;
+    grid-column: 1;
     grid-row: 2;
     font-size: 2rem;
     font-family: UniFrakturCook, cursive;

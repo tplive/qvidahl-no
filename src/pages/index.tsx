@@ -25,7 +25,7 @@ const Home: NextPage = () => {
       </Head>
 
       <body>
-        <Header title={title} subtitle="" />
+        <Header title={title} subtitle="strength in numbers" />
         <TopMenu />
         <div><h1>This is the content</h1></div>
       </body>
