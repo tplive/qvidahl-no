@@ -13,14 +13,16 @@ const Header: React.FC<HeaderProps> = ({ title, subtitle }) => {
     // Blurred text behind
     // Drop shadow top 5px
     return (
-        <>
-            <div className="flex w-80 h-8">
-                <div className="flex justify-center items-center h-screen">
+        <div className={styles.headerContainer}>
+            <div className={styles.headerTitleBlock}>
+                <div className={styles.mainTitle}>
                     <h1>{title}</h1>
-                    <h2>{subtitle}</h2>
+                    <div className={styles.subTitle}>
+                        <h2>{subtitle}</h2>
+                    </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

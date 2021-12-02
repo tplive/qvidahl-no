@@ -1,5 +1,37 @@
 .headerContainer {
-    width: 1280px;
-    height: 256px;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16rem;
+    background-size: cover;
+    background-image: url("../images/marmorslottet_panorama.jpg");
+}
+
+.headerTitleBlock {
+    display: grid;
+    color: whitesmoke;
+}
+
+.mainTitle {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 7rem;
+    font-family: UniFrakturCook, cursive;
+}
+.mainTitle h1 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(37, 30, 30);
+}
+
+.subTitle {
+    justify-items: right;
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 2rem;
+    font-family: UniFrakturCook, cursive;
+}
+
+.mainTitle h2 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(75, 61, 61);
 }
