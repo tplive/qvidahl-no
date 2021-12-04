@@ -4,6 +4,11 @@
   },
   "description": "My personal homepage",
   "homepage": "https://qvidahl.no",
+  "keywords": [
+    "personal",
+    "hompage",
+    "blog"
+  ],
   "license": "MIT",
   "name": "qvidahl.no",
   "repository": {
