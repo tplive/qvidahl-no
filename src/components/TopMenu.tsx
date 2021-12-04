@@ -23,7 +23,7 @@ const Header: React.FC = () => {
             <div className={styles.blog}>Blog</div>
             <div className={styles.projects}>Projects</div>
             <div className={styles.images}>Images</div>
-            <div className={styles.About}>About</div>
+            <div className={styles.About}><Link href="/about"><a>About</a></Link></div>
 
         </div>
     )
