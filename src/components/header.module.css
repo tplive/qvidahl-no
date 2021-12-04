@@ -24,7 +24,10 @@
 }
 
 .subTitle {
-    float:right;
+    position: relative;
+    bottom: 50px;
+    left: 100px;
+    float: right;
     grid-column: 1;
     grid-row: 2;
     font-size: 2rem;
