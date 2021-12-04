@@ -1,9 +1,10 @@
 .content {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     height: 16rem; 
+    min-height: 64rem;
 }
 
 .headerTitleBlock {
