@@ -6,12 +6,9 @@ import Image from 'next/image'
 import Header from '../components/Header'
 import TopMenu from '../components/TopMenu'
 import MainPageContent from '../components/MainPageContent'
-//import ContentCards from '../components/ContentCards'
-//import Quotes from '../components/Quotes'
-//import ImageCarousel from '../components/ImageCarousel'
-//import Card from '../components/Card'
-//import Footer from '../components/Footer'
+import Footer from '../components/Footer'
 import 'tailwindcss/tailwind.css'
+import styles from './index.module.css'
 
 const Home: NextPage = () => {
 
@@ -28,9 +25,12 @@ const Home: NextPage = () => {
       </Head>
 
       <body>
-        <Header title={title} subtitle="strength in numbers" />
-        <TopMenu />
-        <MainPageContent />
+        <div className={styles.container}>
+          <Header title={title} subtitle="strength in numbers" />
+          <TopMenu />
+          <MainPageContent />
+          <Footer />
+        </div>
       </body>
     </>
   )
