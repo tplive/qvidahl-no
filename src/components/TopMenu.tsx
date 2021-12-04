@@ -1,3 +1,4 @@
+// Copyright 2021 The Authors. Subject to the MIT license.
 import * as React from 'react'
 import { MdKeyboardBackspace } from 'react-icons/md'
 import styles from './topmenu.module.css'
