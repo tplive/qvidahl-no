@@ -2,12 +2,11 @@
 
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import Header from '../components/Header'
 import TopMenu from '../components/TopMenu'
 import MainPageContent from '../components/MainPageContent'
 import Footer from '../components/Footer'
-import 'tailwindcss/tailwind.css'
+
 import styles from './index.module.css'
 
 const Home: NextPage = () => {
