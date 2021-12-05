@@ -19,7 +19,12 @@ const MainPageContent: React.FC = () => {
     // About
     return (
         <div className={styles.content}>
-            <ContentCard title="First card" />
+            <ContentCard title="First card">
+                First Card Content
+                <p>This is a paragraph of text. It will be replaced with a live data feed from some
+                    source out there on the wider nets. But for now there is just a placeholder.
+                </p>
+            </ContentCard>
             <ContentCard title="Second card" />
             <ContentCard title="Third card" />
         </div>
