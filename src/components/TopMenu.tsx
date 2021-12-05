@@ -20,7 +20,7 @@ const Header: React.FC = () => {
     return (
         <div className={styles.content}>
             <div className={styles.home}><Link href="/"><a><MdKeyboardBackspace /> Home</a></Link></div>
-            <div className={styles.blog}>Blog</div>
+            <div className={styles.blog}><Link href="/blog"><a>Blog</a></Link></div>
             <div className={styles.projects}>Projects</div>
             <div className={styles.images}>Images</div>
             <div className={styles.About}><Link href="/about"><a>About</a></Link></div>
