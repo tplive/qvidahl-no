@@ -1,3 +1,4 @@
+// Copyright 2021 The Authors. Subject to the MIT license.
 import * as React from 'react'
 import Card from '../Card/Card'
 import julestyle from './Adventskalender.module.css'
