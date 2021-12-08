@@ -12,17 +12,17 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = ({ number, url, active }) => {
     return active === "true" ? (
-        <div key={number} className={julestyle.active_card}>
+        <div className={julestyle.active_card}>
             <a href={url}>
-                <div className="text-3xl font-cards">
-                    <h1 className="p-4">{number}</h1>
+                <div key={number} >
+                    <h1>{number}</h1>
                 </div>
             </a >
         </div >
     ) : (
         <div className={julestyle.inactive_card}>
-            <div key={number} className="text-3xl font-cards">
-                <h1 className="p-4">{number}</h1>
+            <div key={number}>
+                <h1>{number}</h1>
             </div>
         </div >
     )

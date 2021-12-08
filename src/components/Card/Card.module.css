@@ -1,21 +1,24 @@
-.hatch {
-    margin: 1rem;
-    color: white;
-    font-family: lobster;
-}
 
 .active_card {
     background-color: #D6001C;
     color: white;
     border: 1.0px dashed #FFF;
-    height: 130px;
-    width: 130px;
+}
+
+.active_card h1 {
+    padding: 1rem;
+    font-size: xx-large;
+    font-family: Lobster;
 }
 
 .inactive_card {
     color: white;
     background-color: #960014;
     border: 1.0px dashed #DDD;
-    height: 130px;
-    width: 130px;
+}
+
+.inactive_card h1 {
+    padding: 1rem;
+    font-size: xx-large;
+    font-family: Lobster;
 }
