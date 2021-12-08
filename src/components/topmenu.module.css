@@ -15,3 +15,7 @@
 .content div {
     flex: content;
 }
+
+.adventskalender {
+    color: red;
+}
