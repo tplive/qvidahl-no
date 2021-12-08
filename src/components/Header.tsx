@@ -10,8 +10,6 @@ type HeaderProps = {
 }
 
 const Header: React.FC<HeaderProps> = ({ title, subtitle }) => {
-    // Header image, full width
-    // Heading goth font
     // Blurred text behind
     // Drop shadow top 5px
     return (
