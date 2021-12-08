@@ -6,10 +6,19 @@ import Link from 'next/link'
 import Header from '../components/Header'
 import TopMenu from '../components/TopMenu'
 import Footer from '../components/Footer'
+import { GetSortedPostsData } from '../lib/Posts'
 
 import 'tailwindcss/tailwind.css'
 import styles from './blog.module.css'
 
+export async function getStaticProps() {
+  const allPostsData = GetSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
 const Blog: NextPage = () => {
 
   const title = "Blog"
@@ -42,4 +51,4 @@ const Blog: NextPage = () => {
   )
 }
 
-export default Blog
+export default Blog({ allPostsData })
