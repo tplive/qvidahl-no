@@ -12,6 +12,10 @@
     color: whitesmoke;
 }
 
+.bigHeading {
+    font-size: 64px;
+}
+
 .mainTitle {
     grid-column: 1;
     grid-row: 1;

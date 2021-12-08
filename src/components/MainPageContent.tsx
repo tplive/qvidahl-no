@@ -19,15 +19,15 @@ const MainPageContent: React.FC = () => {
     // About
     return (
         <div className={styles.content}>
-            <ContentCard title="First card">
-                First Card Content
-                <p>This is a paragraph of text. It will be replaced with a live data feed from some
-                    source out there on the wider nets. But for now there is just a placeholder.
+            <ContentCard title="Kommer 'snart'">
+                <h1 className={styles.bigHeading}>🚧</h1>
+                <p>Det jobbes intenst med å få til noe nytt her!
+                    Du kan være med å bidra hvis du vil, alle forslag tas mot med stor takk! 😍
                 </p>
+                <h2><a href="https://github.com/tplive/qvidahl-no">Koden ligger på Github</a></h2>
             </ContentCard>
-            <ContentCard title="Second card" />
-            <ContentCard title="Third card" />
-        </div>
+
+        </div >
     )
 }
 
