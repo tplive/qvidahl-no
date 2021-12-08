@@ -1,0 +1,26 @@
+
+.container {
+  padding: 0rem 16rem;
+  justify-content: center;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 140px;
+  grid-auto-columns: 140px;
+  gap: 8px;
+  position: relative;
+  z-index: 5;
+}
+
+.linkspace {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.listStyle {
+  color: white;
+}
+
+
+

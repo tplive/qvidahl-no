@@ -2,39 +2,33 @@
 
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Link from 'next/link'
 import Header from '../components/Header'
 import TopMenu from '../components/TopMenu'
+import MainPageContent from '../components/MainPageContent'
 import Footer from '../components/Footer'
 
-import 'tailwindcss/tailwind.css'
-import styles from './blog.module.css'
+import styles from './index.module.css'
 
-const Blog: NextPage = () => {
+const Home: NextPage = () => {
 
-  const title = "Blog"
-  const subtitle = "...a complete timeline of my life..."
-
-  const articles = {}
-
+  const title = "Styrkr"
   return (
     <>
       <Head>
         <title>{title}</title>
-        <meta name="description" content="The blog is a complete timeline of my life" />
+        <meta name="description" content="Styrkr is an old norse word for 'strength'" />
         <link rel="icon" href="/assets/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
       </Head>
 
       <body>
         <div className={styles.container}>
-          <Header title={title} subtitle={subtitle} />
+          <Header title={title} subtitle="strength in numbers" />
           <TopMenu />
-          <div className={styles.content}>
-            <h1>Read <Link href="posts/first-post"><a>this page</a></Link></h1>
-          </div>
+          <MainPageContent />
           <Footer />
         </div>
       </body>
@@ -42,4 +36,4 @@ const Blog: NextPage = () => {
   )
 }
 
-export default Blog
+export default Home

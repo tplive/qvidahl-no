@@ -1,4 +1,12 @@
 .content {
     background-color: #960014;
     background-size: cover;
+    min-height: 100%;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.topHeading {
+    color: white;
+    font-size: xx-large;
 }

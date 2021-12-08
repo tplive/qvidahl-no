@@ -1,46 +1,56 @@
-import * as React from 'react';
-import { Link, PageProps, graphql } from "gatsby";
+// Copyright 2021 The Authors. Subject to the MIT license.
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import Image from 'next/image'
+import Header from '../components/Header'
+import TopMenu from '../components/TopMenu'
+import Footer from '../components/Footer'
+import 'tailwindcss/tailwind.css'
+import styles from './about.module.css'
 
+const About: NextPage = () => {
 
-interface AboutPageProps extends PageProps {
-    data: {
-        site: {
-            siteMetadata: {
-                title: string,
-            }
-        }
-    }
+  const title = "About"
+  const subtitle = "stuff"
+  return (
+    <>
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content="Styrkr is an old norse word for 'strength'" />
+        <link rel="icon" href="/assets/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
+      </Head>
+
+      <body>
+        <div className={styles.container}>
+          <Header title={title} subtitle={subtitle} />
+          <TopMenu />
+          <div className={styles.content}>
+            <div className={styles.aboutItem}>
+              <h1 className={styles.title}>Interests</h1>
+              <p>Snowboarding, randonèe- and alpine skiing, squash, padel, hiking, mountainbiking, geocaching, gaming</p>
+            </div>
+            <div className={styles.aboutItem}>
+              <h1 className={styles.title}>Contact info</h1>
+              <p>Thomas Qvidahl, mobile number, twitter bla bla</p>
+            </div>
+            <div className={styles.aboutItem}>
+              <h1 className={styles.title}>Training</h1>
+              <p>What is this? Classes and certifications maybe?</p>
+            </div>
+            <div className={styles.aboutItem}>
+              <h1 className={styles.title}>Another card</h1>
+              <p>This is just another card with some more information?</p>
+            </div>
+          </div>
+          <Footer />
+        </div>
+      </body>
+    </>
+  )
 }
 
-export const pageQuery = graphql`
-    query AboutQuery {
-        site {
-            siteMetadata {
-                title
-            }
-        }
-    }
-`
-
-export default class AboutPage extends React.Component<AboutPageProps> {
-
-    public render() {
-        return (
-            <Layout>
-                <SEO title="About" />
-                <h1>About Qvidahl Invent</h1>
-                <h2>and me...</h2>
-                <p>This is where I brag shamelessly about my achievements. More on that.</p>
-                <p>I'm <a href="https://twitter.com/qvidahl" target="_blank">@qvidahl</a> on Twitter</p>
-                
-                <Link to="/page-2/">Go to page 2</Link> <br />
-                <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-            </Layout>
-        );
-    }
-
-}
-
+export default About

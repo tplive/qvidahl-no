@@ -1,0 +1,24 @@
+
+.active_card {
+    background-color: #D6001C;
+    color: white;
+    border: 1.0px dashed #FFF;
+}
+
+.active_card h1 {
+    padding: 1rem;
+    font-size: xx-large;
+    font-family: Lobster;
+}
+
+.inactive_card {
+    color: white;
+    background-color: #960014;
+    border: 1.0px dashed #DDD;
+}
+
+.inactive_card h1 {
+    padding: 1rem;
+    font-size: xx-large;
+    font-family: Lobster;
+}
