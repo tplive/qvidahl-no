@@ -4,7 +4,7 @@
     justify-content: center;
     height: 16rem;
     background-size: cover;
-    background-image: url("../images/marmorslottet_panorama_header.png");
+    background-image: url("/images/marmorslottet_panorama_header.png");
 }
 
 .headerTitleBlock {
