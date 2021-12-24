@@ -1,23 +1,25 @@
 // Copyright 2021 The Authors. Subject to the MIT license.
 
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import Header from '../components/Header'
-import TopMenu from '../components/TopMenu'
-import Footer from '../components/Footer'
-import 'tailwindcss/tailwind.css'
-import styles from './about.module.css'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import Header from "../components/Header";
+import TopMenu from "../components/TopMenu";
+import Footer from "../components/Footer";
+import "tailwindcss/tailwind.css";
+import styles from "./about.module.css";
 
 const About: NextPage = () => {
-
-  const title = "About"
-  const subtitle = "stuff"
+  const title = "About";
+  const subtitle = "stuff";
   return (
     <>
       <Head>
         <title>{title}</title>
-        <meta name="description" content="Styrkr is an old norse word for 'strength'" />
+        <meta
+          name="description"
+          content="Styrkr is an old norse word for 'strength'"
+        />
       </Head>
 
       <body>
@@ -27,7 +29,10 @@ const About: NextPage = () => {
           <div className={styles.content}>
             <div className={styles.aboutItem}>
               <h1 className={styles.title}>Interests</h1>
-              <p>Snowboarding, randonèe- and alpine skiing, squash, padel, hiking, mountainbiking, geocaching, gaming</p>
+              <p>
+                Snowboarding, randonèe- and alpine skiing, squash, padel,
+                hiking, mountainbiking, geocaching, gaming
+              </p>
             </div>
             <div className={styles.aboutItem}>
               <h1 className={styles.title}>Contact info</h1>
@@ -46,7 +51,7 @@ const About: NextPage = () => {
         </div>
       </body>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

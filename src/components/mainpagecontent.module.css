@@ -1,41 +1,41 @@
 .content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: top;
-    justify-content: center;
-    height: 16rem; 
-    min-height: 64rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: top;
+  justify-content: center;
+  height: 16rem;
+  min-height: 64rem;
 }
 
 .headerTitleBlock {
-    display: grid;
-    color: whitesmoke;
+  display: grid;
+  color: whitesmoke;
 }
 
 .bigHeading {
-    font-size: 64px;
+  font-size: 64px;
 }
 
 .mainTitle {
-    grid-column: 1;
-    grid-row: 1;
-    font-size: 7rem;
-    font-family: UniFrakturCook, cursive;
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 7rem;
+  font-family: UniFrakturCook, cursive;
 }
 .mainTitle h1 {
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(37, 30, 30);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(37, 30, 30);
 }
 
 .subTitle {
-    float:right;
-    grid-column: 1;
-    grid-row: 2;
-    font-size: 2rem;
-    font-family: UniFrakturCook, cursive;
+  float: right;
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 2rem;
+  font-family: UniFrakturCook, cursive;
 }
 
 .mainTitle h2 {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(75, 61, 61);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(75, 61, 61);
 }

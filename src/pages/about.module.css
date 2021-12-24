@@ -1,26 +1,23 @@
 .container {
-    
 }
 
 .content {
-    min-height: 8rem;
-    align-items: center;
-    
+  min-height: 8rem;
+  align-items: center;
 }
 
 .aboutItem {
-    padding: 32px;
-    margin: 8px 8px;
-    max-width: 32rem;
-    
+  padding: 32px;
+  margin: 8px 8px;
+  max-width: 32rem;
 }
 .title {
-    padding: 8px;
-    padding-left: 50px;
-    position: relative;
-    left: -50px;
-    margin-bottom: 8px;
-    font-size: xx-large;
-    border: 1px dotted rgb(15, 83, 85);
-    border-radius: 10px;
+  padding: 8px;
+  padding-left: 50px;
+  position: relative;
+  left: -50px;
+  margin-bottom: 8px;
+  font-size: xx-large;
+  border: 1px dotted rgb(15, 83, 85);
+  border-radius: 10px;
 }

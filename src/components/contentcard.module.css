@@ -1,9 +1,9 @@
 .cardContainer {
-    margin: 16px;
-    padding: 8px;
-    border: 1px solid black;
-    background-color:blanchedalmond;
-    min-height: 8rem;
-    min-width: 8rem;
-    max-width: 32rem;
+  margin: 16px;
+  padding: 8px;
+  border: 1px solid black;
+  background-color: blanchedalmond;
+  min-height: 8rem;
+  min-width: 8rem;
+  max-width: 32rem;
 }

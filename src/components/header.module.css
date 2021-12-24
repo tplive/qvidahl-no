@@ -1,40 +1,40 @@
 .headerContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 16rem;
-    background-size: cover;
-    background-image: url("../images/marmorslottet_panorama_header.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16rem;
+  background-size: cover;
+  background-image: url("../images/marmorslottet_panorama_header.png");
 }
 
 .headerTitleBlock {
-    display: grid;
-    color: whitesmoke;
+  display: grid;
+  color: whitesmoke;
 }
 
 .mainTitle {
-    grid-column: 1;
-    grid-row: 1;
-    font-size: 7rem;
-    font-family: UniFrakturCook, cursive;
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 7rem;
+  font-family: UniFrakturCook, cursive;
 }
 .mainTitle h1 {
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(37, 30, 30);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(37, 30, 30);
 }
 
 .subTitle {
-    position: relative;
-    bottom: 50px;
-    left: 100px;
-    float: right;
-    grid-column: 1;
-    grid-row: 2;
-    font-size: 2rem;
-    font-family: UniFrakturCook, cursive;
+  position: relative;
+  bottom: 50px;
+  left: 100px;
+  float: right;
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 2rem;
+  font-family: UniFrakturCook, cursive;
 }
 
 .mainTitle h2 {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(75, 61, 61);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(75, 61, 61);
 }

@@ -1,17 +1,17 @@
 .content {
-    padding: 1rem;
-    display: flex;    
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: black;
-    border-bottom: 1px solid black;
-    font-size: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: black;
+  border-bottom: 1px solid black;
+  font-size: 1.5rem;
 }
 
-.home a{
-    display: flex;
+.home a {
+  display: flex;
 }
 
 .content div {
-    flex: content;
+  flex: content;
 }
