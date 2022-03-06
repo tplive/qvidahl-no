@@ -1,6 +1,6 @@
 # ~/public
 
-This is my public homepage. It's open. You're welcome.
+This is my public homepage. It's open. You're welcome. 🤗
 
 ## How to get it going
 
@@ -34,7 +34,7 @@ Some ideas:
 
 ## How to contribute
 
-Contributions to my homepage is very much welcome! If you see something you'd like to improve upon, please search through the existing issues (be prepared for profanity in both norwegian and english), and if your issue hasn'e been beaten to death already, raise a new issue and explain (preferably without profanity) what and how you want to help improve. Happy to discuss design choices and whatnot. If your issue is a bug or error, please include error messages and steps to reproduce. Let's work together on solving issues! 🤩
+Contributions to my homepage is very much welcome! If you see something you'd like to improve upon, please search through the existing issues (be prepared for profanity in both norwegian and english), and if your issue hasn't been beaten to death already, raise a new issue and explain (preferably without profanity) what and how you want to help improve. Happy to discuss design choices and whatnot. If your issue is a bug or error, please include error messages and steps to reproduce. Let's work together on solving issues! 🤩
 
 ## Contributors
 
